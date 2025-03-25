@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html#home" onclick="toggleSidebar()">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleSidebar()">About</a></li>
+            <li>
+                <a href="#skills">Skills</a>
+                <ul class="sub-menu">
+                    <li><a href="index.html#programming">Programming</a></li>
+                    <li><a href="index.html#analysis">Data Analysis</a></li>
+                    <li><a href="index.html#bi-tools-skills">BI Tools</a></li>
+                    <li><a href="index.html#ml-skills">Machine Learning</a></li>
+                    <li><a href="index.html#tools-tech">Tools & Tech</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+                <ul class="sub-menu">
+                    <li><a href="exploratorydataanalysis.html" onclick="toggleSidebar()">Exploratory Data Analysis</a></li>
+                    <li><a href="bi-tools.html" onclick="toggleSidebar()">BI Tools</a></li>
+                    <li><a href="machine-learning.html" onclick="toggleSidebar()">Machine Learning</a></li>
+                    <li><a href="internship-projects.html" onclick="toggleSidebar()">Internship Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="education.html" onclick="toggleSidebar()">Education</a></li>
+            <li><a href="experience.html" onclick="toggleSidebar()">Experience</a></li>
+            <li>
+                <a href="#resume">Resume</a>
+                <ul class="sub-menu">
+                    <li><a href="https://drive.google.com/file/d/1MCORFAhl4KVLw2mHDCoPnf2okMZlxZvi/preview" target="_blank" onclick="toggleSidebar()">View Resume</a></li>
+                    <li><a href="https://drive.google.com/uc?export=download&id=1MCORFAhl4KVLw2mHDCoPnf2okMZlxZvi" download="Your_Resume.pdf" onclick="toggleSidebar()">Download Resume</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact" onclick="toggleSidebar()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-container">
+                <!-- Education Item 1 -->
+                <div class="education-item">
+                    <h3>Kingston University, London</h3>
+                    <p><strong>Course:</strong> Master of Science Data Science</p>
+                    <p><strong>Place:</strong> Kington Upon Thames, UK</p>
+                    <div class="skills">
+                        <span>Machine Learning</span>
+                        <span>Artificial Intelligence</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Database Management</span>
+                        <span>Data Analytics and Visualization</span>
+                    </div>
+                </div>
+                <!-- Education Item 2 -->
+                <div class="education-item">
+                    <h3>International Institute of Information Technology Bangalore (IIIT-B)</h3>
+                    <p><strong>Course:</strong> Postgraduate Diploma in Data Science (Data Analysis)</p>
+                    <p><strong>Place:</strong> Bangalore, India</p>
+                    <div class="skills">
+                        <span>Machine Learning</span>
+                        <span>Advanced Excel</span>
+                        <span>Hive Query Language</span>
+                        <span>AWS</span>
+                        <span>Data Analysis</span>
+                        <span>Python</span>
+                        <span>Statistics</span>
+                        <span>SQL</span>
+                        <span>Time-Series Analysis</span>
+                    </div>
+                </div>
+                <!-- Education Item 3 -->
+                <div class="education-item">
+                    <h3>NBN Sinhgad School of Engineering (Pune University)</h3>
+                    <p><strong>Course:</strong>Bachelor of Engineering Computer Science</p>
+                    <p><strong>Place:</strong>Pune, India</p>
+                    <div class="skills">
+                        <span>Machine Learning</span>
+                        <span>Artificial Intelligence</span>
+                        <span>Data Structures and Algorithms</span>
+                        <span>Object Oriented Programming</span>
+                        <span>SQL</span>
+                        <span>Database Management</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Jay Thakur. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

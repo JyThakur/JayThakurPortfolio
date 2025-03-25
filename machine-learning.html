@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html#home" onclick="toggleSidebar()">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleSidebar()">About</a></li>
+            <li>
+                <a href="#skills">Skills</a>
+                <ul class="sub-menu">
+                    <li><a href="index.html#programming">Programming</a></li>
+                    <li><a href="index.html#analysis">Data Analysis</a></li>
+                    <li><a href="index.html#bi-tools-skills">BI Tools</a></li>
+                    <li><a href="index.html#ml-skills">Machine Learning</a></li>
+                    <li><a href="index.html#tools-tech">Tools & Tech</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+                <ul class="sub-menu">
+                    <li><a href="exploratorydataanalysis.html" onclick="toggleSidebar()">Exploratory Data Analysis</a></li>
+                    <li><a href="bi-tools.html" onclick="toggleSidebar()">BI Tools</a></li>
+                    <li><a href="machine-learning.html" onclick="toggleSidebar()">Machine Learning</a></li>
+                    <li><a href="internship-projects.html" onclick="toggleSidebar()">Internship Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="education.html" onclick="toggleSidebar()">Education</a></li>
+            <li><a href="experience.html" onclick="toggleSidebar()">Experience</a></li>
+            <li>
+                <a href="#resume">Resume</a>
+                <ul class="sub-menu">
+                    <li><a href="https://drive.google.com/file/d/1MCORFAhl4KVLw2mHDCoPnf2okMZlxZvi/preview" target="_blank" onclick="toggleSidebar()">View Resume</a></li>
+                    <li><a href="https://drive.google.com/uc?export=download&id=1MCORFAhl4KVLw2mHDCoPnf2okMZlxZvi" download="Your_Resume.pdf" onclick="toggleSidebar()">Download Resume</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact" onclick="toggleSidebar()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+        <section class="section">
+            <h2>Machine Learning Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <h3>Project 1: Sentiment Analysis</h3>
+                    <p>Built a sentiment analysis model using NLP techniques.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">GitHub Link</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <h3>Project 2: Image Classification</h3>
+                    <p>Developed an image classification model using TensorFlow.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank">GitHub Link</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                    <h3>Project 3: Customer Segmentation</h3>
+                    <p>Segmented customers using clustering algorithms.</p>
+                    <a href="https://github.com/yourusername/project3" target="_blank">GitHub Link</a>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 4">
+                    <h3>Project 4: Fraud Detection</h3>
+                    <p>Built a fraud detection system using machine learning.</p>
+                    <a href="https://github.com/yourusername/project4" target="_blank">GitHub Link</a>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 5">
+                    <h3>Project 5: Recommendation System</h3>
+                    <p>Developed a recommendation system for e-commerce.</p>
+                    <a href="https://github.com/yourusername/project5" target="_blank">GitHub Link</a>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 6">
+                    <h3>Project 6: Time Series Forecasting</h3>
+                    <p>Forecasted sales using time series analysis.</p>
+                    <a href="https://github.com/yourusername/project6" target="_blank">GitHub Link</a>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Jay Thakur. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Hamburger Icon */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #fff;
+}
+
+/* Sidebar Navigation */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.9);
+    transition: left 0.3s ease;
+    z-index: 999;
+    overflow-y: auto; /* Add scroll if content is too long */
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 80px 0 0 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+    position: relative;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+#sidebar ul li a:hover {
+    background: #555;
+}
+
+/* Sub-Menu Styling */
+#sidebar ul .sub-menu {
+    display: none; /* Hide sub-menu by default */
+    list-style: none;
+    padding-left: 20px; /* Indent sub-menu items */
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1); /* Light background for sub-menu */
+    border-left: 3px solid #2575fc; /* Add a left border for separation */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease;
+}
+
+#sidebar ul .sub-menu.active {
+    display: block; /* Show sub-menu when active */
+}
+
+#sidebar ul .sub-menu li {
+    margin: 10px 0;
+}
+
+#sidebar ul .sub-menu li a {
+    font-size: 16px; /* Smaller font size for sub-menu items */
+    padding: 8px 20px; /* Adjust padding for sub-menu items */
+    background: transparent; /* Remove background for sub-menu items */
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#sidebar ul .sub-menu li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect for sub-menu items */
+    color: #fff; /* Ensure text color remains visible */
+}
+
+/* Main Content */
+#content {
+    flex: 1; /* Allow the content to grow and push the footer to the bottom */
+    padding: 20px;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is open */
+#sidebar.active {
+    left: 0;
+}
+
+#content.shift {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-links a {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between projects */
+    padding: 20px;
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Responsive Grid for Smaller Screens */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between projects */
+    padding: 20px;
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Project Cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.project-card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Grid for Smaller Screens */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 column for tablets and mobile */
+    }
+}
+
+/* Card-Based Layout for Education and Experience */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* 3 cards per row */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.card .skills {
+    margin-top: 15px;
+}
+
+.card .skills span {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0;
+    font-size: 12px;
+}
+
+.card ul {
+    list-style-type: disc; /* Use bullets for list items */
+    padding-left: 20px; /* Add some padding to align the list */
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: left; /* Ensure list items are left-aligned */
+}
+
+.card ul li {
+    font-size: 14px; /* Adjust font size */
+    color: #ddd; /* Light text color */
+    margin-bottom: 5px; /* Add spacing between list items */
+    text-align: left; /* Ensure list items are left-aligned */
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 card per row on mobile */
+    }
+}
+
+/* Education Section with Card Layout */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* 3 cards per row */
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.education-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.education-item h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.education-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.education-item .skills {
+    margin-top: 15px;
+}
+
+.education-item .skills span {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0;
+    font-size: 12px;
+}
+
+/* Animations
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education-item {
+    opacity: 0;
+    animation-fill-mode: forwards;
+} */
+
+.education-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.education-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.education-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.education-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.education-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/* Responsive Design for Education Cards */
+@media (max-width: 768px) {
+    .education-item {
+        width: calc(50% - 20px); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .education-item {
+        width: 100%; /* 1 card per row on mobile */
+    }
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Stack skill categories in one column */
+    align-items: center; /* Center align the skill categories */
+    gap: 20px;
+    max-width: 800px; /* Adjust the max-width for better readability */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Full width for each skill category */
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-align: center; /* Center align the contents */
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.skill-category h3 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.skill-bar {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the progress bar */
+    width: 80%; /* Adjust the width of the progress bar */
+}
+
+.skill-level {
+    background: #2575fc; /* Progress bar color */
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+/* Responsive Design for Skills Section */
+@media (max-width: 768px) {
+    .skill-category {
+        width: 100%; /* 1 column on smaller screens */
+    }
+}
+
+/* Remove education animations */
+.education-item {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sub-Menu Styling */
+#sidebar ul .sub-menu {
+    display: none; /* Hide sub-menu by default */
+    list-style: none;
+    padding-left: 20px; /* Indent sub-menu items */
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1); /* Light background for sub-menu */
+    border-left: 3px solid #2575fc; /* Add a left border for separation */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease;
+}
+
+#sidebar ul .sub-menu.active {
+    display: block; /* Show sub-menu when active */
+}
+
+/* Make sure sections have proper spacing */
+.section {
+    scroll-margin-top: 20px; /* Add space for fixed header */
+}
+
+/* Contact Links */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-links span {
+    font-size: 18px;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: #fff;
+    color: #333;
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    /* Remove the previous mobile-specific styles for contact links */
+    .contact-links span {
+        display: block; /* Show email and phone number on mobile */
+    }
+}
+
+/* Footer */
+footer {
+    background: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: sticky; /* Stick the footer to the bottom */
+    bottom: 0;
+    z-index: 100; /* Ensure the footer stays above other content */
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    .contact-links span {
+        display: none; /* Hide email and phone number on desktop */
+    }
+
+    .contact-links a[href^="mailto:"],
+    .contact-links a[href^="tel:"] {
+        display: inline-flex; /* Show email and phone links on mobile */
+    }
+}

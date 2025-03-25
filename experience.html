@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html#home" onclick="toggleSidebar()">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleSidebar()">About</a></li>
+            <li>
+                <a href="#skills">Skills</a>
+                <ul class="sub-menu">
+                    <li><a href="index.html#programming">Programming</a></li>
+                    <li><a href="index.html#analysis">Data Analysis</a></li>
+                    <li><a href="index.html#bi-tools-skills">BI Tools</a></li>
+                    <li><a href="index.html#ml-skills">Machine Learning</a></li>
+                    <li><a href="index.html#tools-tech">Tools & Tech</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+                <ul class="sub-menu">
+                    <li><a href="exploratorydataanalysis.html" onclick="toggleSidebar()">Exploratory Data Analysis</a></li>
+                    <li><a href="bi-tools.html" onclick="toggleSidebar()">BI Tools</a></li>
+                    <li><a href="machine-learning.html" onclick="toggleSidebar()">Machine Learning</a></li>
+                    <li><a href="internship-projects.html" onclick="toggleSidebar()">Internship Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="education.html" onclick="toggleSidebar()">Education</a></li>
+            <li><a href="experience.html" onclick="toggleSidebar()">Experience</a></li>
+            <li>
+                <a href="#resume">Resume</a>
+                <ul class="sub-menu">
+                    <li><a href="https://drive.google.com/file/d/1MCORFAhl4KVLw2mHDCoPnf2okMZlxZvi/preview" target="_blank" onclick="toggleSidebar()">View Resume</a></li>
+                    <li><a href="https://drive.google.com/uc?export=download&id=1MCORFAhl4KVLw2mHDCoPnf2okMZlxZvi" download="Your_Resume.pdf" onclick="toggleSidebar()">Download Resume</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact" onclick="toggleSidebar()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="card-container">
+                <!-- Experience Card 1 -->
+                <div class="card">
+                    <h3>Prodigy InfoTech</h3>
+                    <p><strong>Position:</strong> Intern (Data Science)</p>
+                    <p><strong>Location:</strong> Remote, UK</p>
+                    <p><strong>Duration:</strong> February 2025 - Present</p>
+                    <p><strong>Job Description:</strong></p>
+                    <ul>
+                        <li>Extracted, transformed, and loaded (ETL) structured data for analysis, ensuring high data integrity and accuracy.</li>
+                        <li>Visualized cleaned data using Python, Pandas, NumPy, Matplotlib, and Seaborn to analyze population distribution across 100+ countries.</li>
+                        <li>Applied a Decision Tree Classifier on demographic and behavioral data to predict customer purchases with 85% accuracy.</li>
+                        <li>Performed sentiment analysis using Python and basic NLP techniques to assess social media opinions on specific topics.</li>
+                    </ul>
+                    <div class="skills">
+                        <span>Extracted, transformed, and loaded (ETL)</span>
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Decision Tree Classifier</span>
+                        <span>Natural Language Programming</span>
+                    </div>
+                </div>
+                <!-- Experience Card 2 -->
+                <div class="card">
+                    <h3>Sigma AI Data Ltd</h3>
+                    <p><strong>Position:</strong> Data Annotator</p>
+                    <p><strong>Location:</strong> Hammersmith, UK</p>
+                    <p><strong>Duration:</strong> October 2024 - March 2025</p>
+                    <p><strong>Job Description:</strong></p>
+                    <ul>
+                        <li>Led live data interpretation using annotation systems, maintaining an error rate below 5%.</li>
+                        <li>Enhanced dataset integrity for AI training, improving reliability by over 40% across projects.</li>
+                        <li>Optimized audio annotation with data classification and tagging, processing 2,500 files daily.</li>
+                        <li>Achieved 98% transcription accuracy, reducing project turnaround times by 30%.</li>
+                    </ul>
+                    <div class="skills">
+                        <span>Data Interpretation</span>
+                        <span>Data Annotation</span>
+                        <span>Data Classification</span>
+                        <span>Data Integrity</span>
+                        <span>Data Accuracy</span>
+                    </div>
+                </div>
+                <!-- Experience Card 3 -->
+                <div class="card">
+                    <h3>Sutherland Healthcare Solutions</h3>
+                    <p><strong>Position:</strong> Implementation Engineer</p>
+                    <p><strong>Location:</strong> Remote, India</p>
+                    <p><strong>Duration:</strong> February 2022 - December 2022</p>
+                    <p><strong>Job Description:</strong></p>
+                    <ul>
+                        <li>Led Allscripts EMR integration with PACS and RIS systems, and PM systems across 15+ healthcare facilities.</li>
+                        <li>Conducted HL7 system integrations and optimized SQL queries, reducing data retrieval times by 30%.</li>
+                        <li>Designed and delivered training on onboarding, issue escalation, and administrative documentation.</li>
+                        <li>Improved operational efficiency by 40%, generating more than $300,000 in revenue for Allscripts.</li>
+                    </ul>
+                    <div class="skills">
+                        <span>EMR Integration with PACS and RIS systems</span>
+                        <span>PM system Integration</span>
+                        <span>HL7 system Integration</span>
+                        <span>Training on Onboarding</span>
+                        <span>Issue Escalation</span>
+                        <span>Administrative Documentation</span>
+                        <span>SQL</span>
+                        <span>Advanced Excel</span>
+                    </div>
+                </div>
+                <!-- Experience Card 4 -->
+                <div class="card">
+                    <h3>Kantar Analytics Practice</h3>
+                    <p><strong>Position:</strong> Data Analyst</p>
+                    <p><strong>Location:</strong> Remote, India</p>
+                    <p><strong>Duration:</strong> April 2021 - July 2021</p>
+                    <p><strong>Job Description:</strong></p>
+                    <ul>
+                        <li>Analyzed marketing campaigns using data assessment, increasing sales by 12% and 8% across industries.</li>
+                        <li>Applied advanced Excel functions and statistical analysis to improve Marketing Mix Model accuracy by 20%.</li>
+                        <li>Optimized marketing ROI by $500K through strategic budget reallocations based on identified KPIs.</li>
+                        <li>Delivered actionable insights that enhanced strategic decision-making and boosted brand awareness by 15%.</li>
+                    </ul>
+                    <div class="skills">
+                        <span>Data Assessment</span>
+                        <span>Advanced Excel (VLOOKUP, Pivot Table, Conditional Formatting)</span>
+                        <span>Data Analysis</span>
+                        <span>Statistical Analysis</span>
+                        <span>Decision-Making</span>
+                        <span>Marketing Mix Model</span>
+                        <span>Marketing Analysis</span>
+                    </div>
+                </div>
+                <!-- Add more experience cards here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Jay Thakur. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
